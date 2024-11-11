@@ -12,7 +12,7 @@ public class Classify {
     }
 
     @Then("the classification is {string}")
-    public void the_classification_is_equilateral(String arg0) {
+    public void classification(String arg0) {
         assertEquals(arg0, t.classify());
     }
 }
