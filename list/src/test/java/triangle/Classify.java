@@ -11,9 +11,9 @@ public class Classify {
         t = new Triangle(arg0, arg1, arg2);
     }
 
-    @Then("the classification is equilateral")
-    public void the_classification_is_equilateral() {
-        assertEquals("equilateral", t.classify());
+    @Then("the classification is {string}")
+    public void the_classification_is_equilateral(String arg0) {
+        assertEquals(arg0, t.classify());
     }
 }
 

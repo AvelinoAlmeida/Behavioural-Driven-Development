@@ -31,7 +31,7 @@ task cucumber() {
             args = [
                     '--plugin', 'pretty',
                     '--plugin', 'html:target/cucumber-report.html',
-                    '--glue', 'org.estg.qos.triangle',
+                    '--glue', 'triangle',
                     'src/test/resources/features']
         }
     }
